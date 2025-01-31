@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router,createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes } from "react-router-dom"
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import Main from './Component/home/Main';
 import PropertyList from './Component/home/PropertyList';
 import PropertyDetails from './Component/home/PropertyDetails/PropertyDetails';
@@ -56,8 +56,8 @@ function App() {
         <Route id='mybookings' path='user/booking' element={<MyBookings/>}/>
         <Route id='bookingdetails' path="user/booking/:bookingId" element={<BookingDetails/>} />
 
-        <Route id='Accomodation' path="Accommodation" element={<Accomodation/>}/>
-        <Route id='Accomodationform' path='Accomodationform' element={<AccomodationForm/>} />
+        <Route id='accomodation' path="accommodation" element={<Accomodation/>}/>
+        <Route id='accomodationform' path='accomodationform' element={<AccomodationForm/>} />
 
       </Route>
 
