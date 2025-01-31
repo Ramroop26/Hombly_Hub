@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React, {useState } from "react";
 
 const Amenities = ({ perks, setPerks }) => {
   const handleCheckboxChange = (id) => {
